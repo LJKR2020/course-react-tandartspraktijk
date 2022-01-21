@@ -10,6 +10,7 @@ import CavitiesPage from './pages/Cavities';
 import AppointmentsPage from './pages/Appointments';
 import WhiteningPage from './pages/Whitening';
 import './App.css';
+import "./index.css";
 
 function App() {
     return (
@@ -20,13 +21,13 @@ function App() {
                 <Route exact path="/">
                     <HomePage/>
                 </Route>
-                <Route exact path="/gaatjes">
+                <Route path="/gaatjes">
                     <CavitiesPage/>
                 </Route>
-                <Route exact path="/afspraak-maken">
+                <Route path="/afspraak-maken">
                     <AppointmentsPage/>
                 </Route>
-                <Route exact path="/tanden-bleken">
+                <Route path="/tanden-bleken">
                     <WhiteningPage/>
                 </Route>
             </Switch>
